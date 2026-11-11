@@ -1,4 +1,4 @@
-# Secure Linux Server
+# Linux Secure Server
 
 A hardened Ubuntu Server 24.04 built from scratch and fully automated with Bash:
 least-privilege access control, key-only SSH, firewalling, brute-force protection,
