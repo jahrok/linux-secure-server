@@ -1,4 +1,4 @@
-# linux-secure-server# Secure Linux Server
+# Secure Linux Server
 
 A hardened Ubuntu Server 24.04 built from scratch and fully automated with Bash:
 least-privilege access control, key-only SSH, firewalling, brute-force protection,
@@ -48,7 +48,13 @@ sudo systemctl daemon-reload && sudo systemctl enable --now backup.timer
 ![permissions](docs/screenshots/01-permissions.png)
 
 ### SSH hardening
-![ssh](docs/screenshots/02-ssh.png)
+Key-based login succeeds:
+
+![ssh key login](docs/screenshots/02-ssh.png)
+
+Password authentication is rejected, confirming key-only access:
+
+![ssh password rejected](docs/screenshots/02-ssh-b.png)
 
 ### Firewall and fail2ban
 ![firewall](docs/screenshots/03-firewall.png)
