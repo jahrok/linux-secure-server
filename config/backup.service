@@ -1,0 +1,6 @@
+[Unit]
+Description=Backup of /srv/project
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/backup.sh
